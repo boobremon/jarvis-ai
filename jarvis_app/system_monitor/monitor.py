@@ -22,7 +22,6 @@ class SystemStats:
     # CPU
     cpu_percent: float
     cpu_freq: float
-    cpu_temp: Optional[float] = None
     cpu_cores: int
 
     # Memory
@@ -31,27 +30,26 @@ class SystemStats:
     ram_total_gb: float
     ram_available_gb: float
 
-    # GPU (if available)
-    gpu_percent: Optional[float] = None
-    gpu_memory_percent: Optional[float] = None
-    gpu_temp: Optional[float] = None
-
     # Network
     network_sent_mb: float
     network_recv_mb: float
-    network_upload_speed_kbps: float = 0
-    network_download_speed_kbps: float = 0
 
     # Disk
     disk_percent: float
     disk_used_gb: float
     disk_total_gb: float
+
+    # Optional/Default fields below
+    cpu_temp: Optional[float] = None
+    gpu_percent: Optional[float] = None
+    gpu_memory_percent: Optional[float] = None
+    gpu_temp: Optional[float] = None
+    network_upload_speed_kbps: float = 0
+    network_download_speed_kbps: float = 0
     disk_read_speed_mbps: float = 0
     disk_write_speed_mbps: float = 0
-
-    # System
-    boot_time: float
-    uptime_seconds: float
+    boot_time: float = 0
+    uptime_seconds: float = 0
     battery_percent: Optional[float] = None
     battery_plugged: bool = False
 

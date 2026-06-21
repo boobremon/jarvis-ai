@@ -7,7 +7,7 @@ Main HUD interface with futuristic design.
 
 from PyQt6.QtWidgets import (
     QMainWindow, QWidget, QVBoxLayout, QHBoxLayout,
-    QFrame, QSizePolicy, QApplication, QStackedWidget
+    QFrame, QSizePolicy, QApplication, QStackedWidget, QLabel
 )
 from PyQt6.QtCore import Qt, QTimer
 from PyQt6.QtGui import QFont

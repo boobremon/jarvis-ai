@@ -68,9 +68,8 @@ class CommandParser:
                 r"^(tell me the time).*",
             ],
             CommandType.DATE: [
-                r"^(date|what date|what'?s the date|current date|today).*
-",
-                r"^(what day is it).*",
+                r"^(date|what date|what'?s the date|current date|today).*$",
+                r"^(what day is it).*$",
             ],
             CommandType.OPEN_APP: [
                 r"^open ([a-z\s]+)\s*(app|application)?$",
